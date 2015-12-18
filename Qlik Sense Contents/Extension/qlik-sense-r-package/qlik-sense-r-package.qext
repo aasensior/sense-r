@@ -1,0 +1,9 @@
+{
+	"name" : "Open CPU and R - Custom Package",
+	"description" : "Extension that leverages a custom R package. Based on Christian Nødtvedt Open CPU and R - multi-factor regression extension.",
+	"icon" : "extension",
+	"preview": "preview.png",
+	"type" : "visualization",
+	"version" : "0.1",
+	"author" : "Alberto Asension, Renato Vieira"
+}

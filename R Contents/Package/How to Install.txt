@@ -1,0 +1,17 @@
+Recommendations to install this package:
+
+1. LOCAL INSTALLATION ON THE USER'S R REPOSITORY
+
+* Copy the 'qlikexamples' folder or extract 'qlikexamples.tar.gz' to a temporary destination of your choice (i.e. Desktop)
+* Open R terminal
+* Load devtools typing 'library(devtools)'
+* install the package typing 'install("<path to qlikexamples>")'
+	example: install("/home/abb/Desktop/qlikexamples")
+
+
+2. GLOBAL INSTALLATION ON THE GLOBAL R LIBRARY
+
+sudo R CMD INSTALL qlikexamples.tar.gz
+
+This will install the package on the global R repository and make it available to every user on the R server.
+

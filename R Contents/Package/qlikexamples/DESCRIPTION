@@ -1,0 +1,12 @@
+Package: qlikexamples
+Title: Simple package with a few example functions to connect Open CPU and Qlik
+    Sense
+Version: 0.0.0.9000
+Description: This package has a set of functions that can exemplify how to make
+    data or visualizations to Qlik Sense, using Open CPU. Set of examples has static
+    text, static plots, regression and decision tree.
+Depends:
+    R (>= 3.2.2)
+License: The MIT License (MIT)
+LazyData: true
+RoxygenNote: 5.0.1

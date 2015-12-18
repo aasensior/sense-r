@@ -1,0 +1,13 @@
+Important note!
+
+The developed package depends on the following public packages:
+* stats
+* forecast
+* rpart
+
+You can look in R terminal if they are installed using the following command:
+find.package("<package_name>")
+
+Example: find.package("stats")
+
+
