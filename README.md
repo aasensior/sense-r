@@ -7,6 +7,8 @@ Plan is to evolve it in order to cover more functionalities and use cases. Feedb
 
 This package is composed of an R package to be deployed on an R server with OpenCPU installed and a Qlik Sense extension used to communicate Qlik Sense with R through OpenCPU and paint the results returned from R.
 
+![Architecture](http://i.imgsafe.org/dc6b0b3.jpg)
+
 #### Setting up the environment
 
 1. Install OpenCPU, preferably on Ubuntu 14.04. Installation instructions can be found at https://www.opencpu.org/download.html
@@ -30,3 +32,11 @@ This example is based on the work made by Christian Nødtvedt, you can check it 
 #### Disclaimer
 
 Although reasonable efforts have been made in order to make everything work smoothly, we can in no way guarantee the proper behavior of this development as it is solely intended for demonstration/educational purposes. We strongly discourage the use of this extension, as provided, for any other purpose than the aforementioned. Use at your own risk.
+
+#### Some screenshots
+
+![Graph Plotting](http://i.imgsafe.org/e122f73.jpg)
+
+![Dynamic Decision Tree](http://i.imgsafe.org/dd43148.jpg)
+
+![Dynamic Forecasting](http://i.imgsafe.org/de3ce59.jpg)
