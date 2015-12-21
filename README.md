@@ -1,7 +1,7 @@
 # sense-r
 Functional examples on integrating Qlik Sense and R.
 
-Plan is to evolve it in order to cover more functionalities and use cases.
+Plan is to evolve it in order to cover more functionalities and use cases. Feedback is appreciated.
 
 #### Background
 
