@@ -27,7 +27,7 @@ This package is composed of an R package to be deployed on an R server with Open
 
 #### Acknowledgements
 
-This example is based on the work made by Christian Nødtvedt, you can check it on http://branch.qlik.com/#/user/56728f52d1e497241ae6ab4a and https://github.com/nodtvedt/qlik-sense-r-regression-extension. Thanks!
+This example is based on the work made by Per Christian Nødtvedt, you can check it on http://branch.qlik.com/#/user/56728f52d1e497241ae6ab4a and https://github.com/nodtvedt/qlik-sense-r-regression-extension. Thanks!
 
 #### Disclaimer
 
