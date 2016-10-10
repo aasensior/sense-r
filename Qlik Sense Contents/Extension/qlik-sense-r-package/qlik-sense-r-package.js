@@ -164,7 +164,8 @@ function runRegression($element, layout, fullMatrix) {
 		else if(layout.props.exampleType==2){ //example for Static Bar Plot. Note: you can find the function within the R package at "qlikexamples/R/bar_example.R"
 			showLoader();
 			url = url.replace(/\/?$/, '/');
-			var command = url + 'ocpu/library/qlikexamples/R';
+			// var command = url + 'ocpu/library/qlikexamples/R';
+			var command = url + 'qlikexamples/R';
 
 			ocpu.seturl(command);
 
@@ -175,7 +176,8 @@ function runRegression($element, layout, fullMatrix) {
 				function(output){
 					$element.empty();
 
-					var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					// var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					var r_image_url = output.getLoc() + "graphics/last/png?"; //or svg or pdf
 					r_image_url += "width="+$element[0].clientWidth; //for svg format, calculate proportion
 					r_image_url += "&height="+$element[0].clientHeight; //for svg format, calculate proportion
 
@@ -194,7 +196,8 @@ function runRegression($element, layout, fullMatrix) {
 		else if(layout.props.exampleType==3){ //example for Static 3D Plot. Note: you can find the function within the R package at "qlikexamples/R/volcano_example.R"
 			showLoader();
 			url = url.replace(/\/?$/, '/');
-			var command = url + 'ocpu/library/qlikexamples/R';
+			// var command = url + 'ocpu/library/qlikexamples/R';
+			var command = url + 'qlikexamples/R';
 
 			ocpu.seturl(command);
 
@@ -205,7 +208,8 @@ function runRegression($element, layout, fullMatrix) {
 				function(output){
 					$element.empty();
 
-					var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					// var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					var r_image_url = output.getLoc() + "graphics/last/png?"; //or svg or pdf
 					r_image_url += "width="+$element[0].clientWidth; //for svg format, calculate proportion
 					r_image_url += "&height="+$element[0].clientHeight; //for svg format, calculate proportion
 
@@ -291,8 +295,9 @@ function runRegression($element, layout, fullMatrix) {
 			}else{
 				// url = "https://public.opencpu.org";			
 				url = url.replace(/\/?$/, '/');
-				var command = url + 'ocpu/library/qlikexamples/R';
-
+				// var command = url + 'ocpu/library/qlikexamples/R';
+				var command = url + 'qlikexamples/R';
+				
 				ocpu.seturl(command);
 
 				var req = $element.rplot(
@@ -305,7 +310,8 @@ function runRegression($element, layout, fullMatrix) {
 					function(output){
 						$element.empty();
 
-						var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+						// var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+						var r_image_url = output.getLoc() + "graphics/last/png?"; //or svg or pdf
 						r_image_url += "width="+$element[0].clientWidth; //for svg format, calculate proportion
 						r_image_url += "&height="+$element[0].clientHeight; //for svg format, calculate proportion
 
@@ -375,7 +381,8 @@ function runRegression($element, layout, fullMatrix) {
 			}
 
 			url = url.replace(/\/?$/, '/');
-			var command = url + 'ocpu/library/qlikexamples/R';
+			// var command = url + 'ocpu/library/qlikexamples/R';
+			var command = url + 'qlikexamples/R';
 
 			ocpu.seturl(command);
 
@@ -389,7 +396,8 @@ function runRegression($element, layout, fullMatrix) {
 				function(output){
 					$element.empty();
 
-					var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					// var r_image_url = layout.props.section1.item1+output.output[1].replace('/1','/last')+"/png?"; //or svg or pdf.
+					var r_image_url = output.getLoc() + "graphics/last/png?"; //or svg or pdf
 					r_image_url += "width="+$element[0].clientWidth; //for svg format, calculate proportion
 					r_image_url += "&height="+$element[0].clientHeight; //for svg format, calculate proportion
 
